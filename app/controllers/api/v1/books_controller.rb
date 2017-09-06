@@ -1,7 +1,7 @@
 class Api::V1::BooksController < ApplicationController
 
    def index
-   	binding.pry
+   	
      @books = Book.all
     render 'books/books.json.jbuilder', books: @books
    end
