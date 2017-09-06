@@ -2,22 +2,12 @@ class Api::V1::BooksController < ApplicationController
 
    def index
    	
-     @books = Book.all
-    render 'books/books.json.jbuilder', books: @books
+     render json: Book.all.to_json()
    end
 
 
    def show
-   		@book = Book.find_by(id: params[:id])
-   		if @book
-   			render 'books/book.json.jbuilder', book: @book
-   		else
-   			render json: {
-   				errors: {
-   					message: "Page not found"
-   				}
-   			}, status: 404
-   		end
+   		  render json: Book.find_by(id: params[:id]).to_json()
 
    end
 
