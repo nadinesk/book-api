@@ -1,10 +1,9 @@
 class Api::V1::BooksController < ApplicationController
 
-
-
    def index
-      @books = Book.all
-    	render 'books/books.json.jbuilder', books: @books
+   	binding.pry
+     @books = Book.all
+    render 'books/books.json.jbuilder', books: @books
    end
 
 
@@ -31,14 +30,7 @@ class Api::V1::BooksController < ApplicationController
    					errors: @book.errors.full_messages
    				}, status: 500
    			end
-   		else
-   			render json: {
-   				errors: [
-   					{message: "No permission to add books"}
-   				]
-   			}, status: 403
-   		end
-
+   		
    end
 
    def update
@@ -50,13 +42,7 @@ class Api::V1::BooksController < ApplicationController
    					errors: @book.errors.full_messages
    				}, status: 500
    			end
-   		else
-   			render json: {
-   				errors: [
-   					{message: "You don't have permission to edit this book"}
-   				]
-   			}, status: 403
-   		end
+   		
    end
 
    def destroy
