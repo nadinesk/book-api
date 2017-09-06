@@ -1,12 +1,9 @@
 class Api::V1::BooksController < ApplicationController
 
    def index
-     	
-     
-         render json: {
-            message: "No books yet"
-         }
-     
+   	
+     @books = Book.all
+    render 'books/books.json.jbuilder', books: @books
    end
 
 
