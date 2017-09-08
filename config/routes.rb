@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do  
-        root "books#index"
+        root "books#ping"
         resources :books
     end
   end

@@ -50,6 +50,12 @@ class Api::V1::BooksController < ApplicationController
 
    end
 
+    def ping
+       render json: {
+         status: "OK"
+       }
+   end
+
   private
 
     def book_params
