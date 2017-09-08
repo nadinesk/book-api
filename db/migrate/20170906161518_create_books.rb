@@ -8,7 +8,7 @@ class CreateBooks < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
-     add_foreign_key :books
-    add_index :books
+     
+   
   end
 end
