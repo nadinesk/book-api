@@ -1,11 +1,11 @@
 
 Rails.application.routes.draw do
 
-
+root "books#ping"
   namespace :api do 
     namespace :v1 do  
         root "books#ping"
-        resources :books, only: [:index, :create, :update, :delete, :show, :ping]
+        resources :books
     end
   end
 end
