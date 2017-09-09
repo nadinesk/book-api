@@ -1,13 +1,9 @@
 class Api::V1::BooksController < ApplicationController
 
    def index   	
-     if Book.all
+     
          render json: Book.all.to_json()
-      else 
-         render json: {
-            message: 'nothing yet'
-      }
-      end
+     
    end
 
 
