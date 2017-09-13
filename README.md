@@ -1,24 +1,20 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Overview
 
-Things you may want to cover:
+This is the back-end for The BookCrowd app. The back-end code is [here](https://github.com/nadinesk/book-client). 
 
-* Ruby version
+The BookCrowd crowdsources books that other users have enjoyed, to give others ideas for new books to read.
 
-* System dependencies
+Users can list books they want to share as ideas for others to read, and they can search for books, with results from the Google API.
 
-* Configuration
+This app can be accessed here: 
 
-* Database creation
+http://glacial-atoll-99448.herokuapp.com/
 
-* Database initialization
+## Contributing
 
-* How to run the test suite
+Bug reports and pull requests are welcome on GitHub [here](https://github.com/nadinesk/playlister). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
-
-* ...
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
