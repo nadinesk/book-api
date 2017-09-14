@@ -14,6 +14,7 @@ class Api::V1::BooksController < ApplicationController
 
    def create
    			@book = Book.new(book_params)
+        binding.pry
    			if @book.save
    				render '/books/book.json.jbuilder', book: @book
    			else
